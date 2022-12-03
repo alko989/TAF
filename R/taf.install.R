@@ -58,8 +58,12 @@
 taf.install <- function(targz=NULL, lib="boot/library", quiet=FALSE)
 {
   if(is.null(targz))
+  {
+    if(boot.dir() == "")
+      stop("targz not found")
     targz <- dir(file.path(boot.dir(), "software"),
                  pattern="_[0-9a-f]{7}\\.tar\\.gz", full.names=TRUE)
+  }
 
   mkdir(lib)
 

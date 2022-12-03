@@ -45,7 +45,7 @@ taf.library <- function(package, messages=FALSE, warnings=FALSE)
     owd <- setwd("../../.."); on.exit(setwd(owd))
   }
 
-  if(is.null(boot.dir()) || !dir.exists(file.path(boot.dir(),"library")))
+  if(boot.dir()=="" || !dir.exists(file.path(boot.dir(),"library")))
     stop("directory 'boot/library' not found")
 
   installed <- dir(file.path(boot.dir(), "library"))

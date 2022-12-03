@@ -37,7 +37,7 @@
 
 taf.libPaths <- function(remove=FALSE)
 {
-  if(is.null(boot.dir()))
+  if(boot.dir() == "")
   {
     warning("'boot' folder does not exist")
     return(.libPaths())
