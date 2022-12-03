@@ -1,5 +1,5 @@
 
-R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
 Copyright (C) 2022 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
@@ -299,7 +299,7 @@ Type 'q()' to quit R.
 > ##D convert.spaces("A B.txt")
 > ##D 
 > ##D ## Many files
-> ##D convert.spaces("bootstrap/initial/data/*")
+> ##D convert.spaces("boot/initial/data/*")
 > ## End(Not run)
 > 
 > 
@@ -635,8 +635,8 @@ Type 'q()' to quit R.
 > ### ** Examples
 > 
 > ## Not run: 
-> ##D is.r.package("bootstrap/software/SAM.tar.gz")
-> ##D is.r.package("bootstrap/software/stockassessment.tar.gz")
+> ##D is.r.package("boot/software/SAM.tar.gz")
+> ##D is.r.package("boot/software/stockassessment.tar.gz")
 > ## End(Not run)
 > 
 > 
@@ -1116,7 +1116,7 @@ Type 'q()' to quit R.
 > ### ** Examples
 > 
 > ## Not run: 
-> ##D source.dir("bootstrap/software/utilities")
+> ##D source.dir("boot/software/utilities")
 > ## End(Not run)
 > 
 > 
@@ -1182,7 +1182,7 @@ Type 'q()' to quit R.
 > flush(stderr()); flush(stdout())
 > 
 > ### Name: taf.boot
-> ### Title: Bootstrap TAF Analysis
+> ### Title: Boot TAF Analysis
 > ### Aliases: taf.boot taf.bootstrap
 > 
 > ### ** Examples
@@ -1207,9 +1207,9 @@ Type 'q()' to quit R.
 > ### ** Examples
 > 
 > taf.boot.path()
-[1] "bootstrap"
+[1] "boot"
 > taf.boot.path("software")
-[1] "bootstrap/software"
+[1] "boot/software"
 > 
 > 
 > 
@@ -1256,9 +1256,9 @@ Type 'q()' to quit R.
 > ### ** Examples
 > 
 > taf.data.path()
-[1] "bootstrap/data"
+[1] "boot/data"
 > taf.data.path("example.dat")
-[1] "bootstrap/data/example.dat"
+[1] "boot/data/example.dat"
 > 
 > 
 > 
@@ -1277,9 +1277,9 @@ Type 'q()' to quit R.
 > 
 > ## Not run: 
 > ##D # Install one package
-> ##D taf.install("bootstrap/software/FLAssess_f1e5acb.tar.gz")
+> ##D taf.install("boot/software/FLAssess_f1e5acb.tar.gz")
 > ##D 
-> ##D # Install all packages found in bootstrap/software
+> ##D # Install all packages found in boot/software
 > ##D taf.install()
 > ## End(Not run)
 > 
@@ -1428,7 +1428,7 @@ Type 'q()' to quit R.
 > 
 > ## Not run: 
 > ##D exefile <- if(os.unix()) "run" else "run.exe"
-> ##D taf.unzip("bootstrap/software/archive.zip", files=exefile, exdir="model")
+> ##D taf.unzip("boot/software/archive.zip", files=exefile, exdir="model")
 > ## End(Not run)
 > 
 > 
@@ -1743,7 +1743,7 @@ detaching ‘package:lattice’
 
 > options(digits = 7L)
 > base::cat("Time elapsed: ", proc.time() - base::get("ptime", pos = 'CheckExEnv'),"\n")
-Time elapsed:  0.512 0.028 0.54 0 0 
+Time elapsed:  0.523 0.036 0.563 0 0 
 > grDevices::dev.off()
 null device 
           1 
